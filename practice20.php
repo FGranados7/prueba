@@ -6,6 +6,7 @@
 </head>
 <body>
 <div id="app">
+    <p style="color: blue">{{ description }}</p>
     <ul>
         <li v-for="ingredient in ingredients">{{ ingredient }}</li>
     </ul>
@@ -40,6 +41,7 @@
     new Vue({
         el: '#app',
         data: {
+            description: 'Adding this text for update it in Git',
             ingredients: ['meat', 'fruit', 'cookies'],
             persons: [
                 {name: 'Max', age: 27, color: 'red'},
